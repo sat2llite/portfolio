@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <link rel="stylesheet" type="text/css" href="./css/import.css">
+    <link rel="stylesheet" href="./css/scrollanim.min.css">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>백승연 포트폴리오</title>
@@ -37,7 +40,7 @@
                     <!-- <img src="./images/visual_box.png"> -->
                 </div>
                 
-                <div class="intro">
+                <div class="intro" data-kui-anim="fadeInDown">
                     <h1>BAEK SEUNG YEON</h1>
                     <h2>WEB PUBLISHER</h2>
                 </div>
@@ -49,18 +52,18 @@
     </section>
 
     <section id="about">
-            <h2>
+            <h2 data-kui-anim="slideInUp">
                 <span></span>
                 ABOUT
             </h2>
 
         <div class="left">
-            <figure>
+            <figure data-kui-anim="fadeInLeft">
                 <img src="images/images/contents_about.png"/>
             </figure>
         </div>
         <div class="right">
-            <dl>
+            <dl data-kui-anim="fadeInRight">
                 <dt>
                     <span></span>
                     Profile
@@ -69,7 +72,7 @@
                 <dd>경기도 부천시</dd>
                 <dd>010-4730-8666</dd>
             </dl>
-            <dl>
+            <dl data-kui-anim="fadeInRight">
                 <dt>
                     <span></span>
                     History
@@ -80,7 +83,7 @@
                 <dd>2016. 03 ~ 2019. 02</dd>
                 <dd>부천대학교 컴퓨터소프트웨어과 졸업</dd>
             </dl>
-            <dl>
+            <dl data-kui-anim="fadeInRight">
                 <dt>
                     <span></span>
                     License
@@ -91,44 +94,44 @@
     </section>
 
     <section id="skills">
-        <h2>
+        <h2 data-kui-anim="slideInUp">
             <span></span>
             SKILLS
         </h2>
         <div class="s_contents">
             <div class="charts">
-                <div class="chart" id="psai">
+                <div class="chart" id="psai" data-kui-anim="slideInUp">
                     <img src="./images/ps&ai.png" / alt="psai">
                     <canvas id="myChart"></canvas>
                 </div>
-                <div class="chart" id="html">
+                <div class="chart" id="html" data-kui-anim="slideInUp">
                     <img src="./images/html.png" / alt="html">
                     <canvas id="myChart02"></canvas>
                 </div>
-                <div class="chart" id="css">
+                <div class="chart" id="css" data-kui-anim="slideInUp">
                     <img src="./images/css.png" / alt="css">
                     <canvas id="myChart03"></canvas>
                 </div>
-                <div class="chart" id="jquery">
+                <div class="chart" id="jquery" data-kui-anim="slideInUp">
                     <img src="./images/jquery.png" / alt="jquery">
                     <canvas id="myChart04"></canvas>
                 </div>
             </div>
 
             <div class="txt_group">
-                <div class="charts_txt" id="psai_txt">
+                <div class="charts_txt" id="psai_txt" data-kui-anim="slideInUp">
                     <h3>95%</h3>
                     <p><br><br><br><br></p>
                 </div>
-                <div class="charts_txt" id="html_txt">
+                <div class="charts_txt" id="html_txt" data-kui-anim="slideInUp">
                     <h3>90%</h3>
                     <p><br><br><br><br></p>
                 </div>
-                <div class="charts_txt" id="css_txt">
+                <div class="charts_txt" id="css_txt" data-kui-anim="slideInUp">
                     <h3>90%</h3>
                     <p><br><br><br><br></p>
                 </div>
-                <div class="charts_txt" id="jquery_txt">
+                <div class="charts_txt" id="jquery_txt" data-kui-anim="slideInUp">
                     <h3>70%</h3>
                     <p><br><br><br><br></p>
                 </div>
@@ -137,22 +140,63 @@
     </section>
 
     <section id="portfolio">
-        <h2>
+        <h2 data-kui-anim="slideInUp">
             <span></span>
             PORTFOLIO
         </h2>
         <div class="inner" id="tabs">
             <ul>
-                <li><a href="javascript:void(0);" OnClick='premier(1);' id='premier_button1'>마리오아울렛</a></li>
-                <li><a href="javascript:void(0);" OnClick='premier(2);' id='premier_button2'>TWOSOME</a></li>
-                <li><a href="javascript:void(0);" OnClick='premier(3);' id='premier_button3'>빌리프</a></li>
-                <li><a href="javascript:void(0);" OnClick='premier(4);' id='premier_button4'>ANU</a></li>
-                <li><a href="javascript:void(0);" OnClick='premier(5);' id='premier_button5'>스타벅스</a></li>
-                <li><a href="javascript:void(0);" OnClick='premier(6);' id='premier_button6'>티몬</a></li>
-                <li><a href="javascript:void(0);" OnClick='premier(7);' id='premier_button7'>SK플래닛</a></li>
+                <li><a href="javascript:void(0);" OnClick='premier(1);' id='premier_button1'>포트폴리오</a></li>
+                <li><a href="javascript:void(0);" OnClick='premier(2);' id='premier_button2'>마리오아울렛</a></li>
+                <li><a href="javascript:void(0);" OnClick='premier(3);' id='premier_button3'>TWOSOME</a></li>
+                <li><a href="javascript:void(0);" OnClick='premier(4);' id='premier_button4'>빌리프</a></li>
+                <li><a href="javascript:void(0);" OnClick='premier(5);' id='premier_button5'>ANU</a></li>
+                <li><a href="javascript:void(0);" OnClick='premier(6);' id='premier_button6'>스타벅스</a></li>
+                <li><a href="javascript:void(0);" OnClick='premier(7);' id='premier_button7'>티몬</a></li>
+                <li><a href="javascript:void(0);" OnClick='premier(8);' id='premier_button8'>SK플래닛</a></li>
             </ul>
         </div>
-            <section id="premier1">
+        <section id="premier1">
+            <div class="left">
+                <img src="images/portfolio_my.png" alt="mo"/>
+            </div>
+
+            <div class="right">
+                <h1 class="title">개인 포트폴리오 사이트</h1>
+
+                <div class="tool">
+                    <p>사용 툴 : PhotoshopCC, VS Code</p>
+                    <p>참여도 : 100%</p>
+                </div>
+
+                <div class="view_site">
+                    <button type="button" id="myBtn">VIEW</button>
+                </div>
+            
+                <!--Modal -->
+                <div id="myModal" class="modal">
+            
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>                                                               
+                    <h3><span>#01</span> 개인 포트폴리오 사이트<br/> </h3>
+                    <br>
+                    <h4>PC, 반응형</h4>
+                    <br>
+                    작업물을 한 눈에 볼 수 있도록 제작한 개인 포트폴리오 사이트 입니다.<br>
+                    전부 하드코딩으로 작업했고 최근 트렌드에 맞게 원페이지로 제작하였습니다.
+                    <br/>
+                    <br/>
+                    <button type="button" id="myBtn">VIEW SITE</button>
+
+                </div>
+            
+                </div>
+
+            </div>
+        </section>
+
+            <section id="premier2" style="display:none;">
                 <div class="left">
                     <img src="images/portfolio_mo.png" alt="mo"/>
                 </div>
@@ -166,12 +210,25 @@
                     </div>
     
                     <div class="view_site">
-                        <a href="#" target="_blank">VIEW</a>
+                        <button type="button" id="myBtn">VIEW</button>
                     </div>
+                
+                    <!--Modal -->
+                    <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>                                                               
+                        
+
+                    </div>
+                
+                    </div>
+
                 </div>
             </section>
 
-            <section id="premier2" style="display:none;">
+            <section id="premier3" style="display:none;">
                 <div class="left">
                     <img src="./images/portfolio_twosome.png" alt="ts" />
                 </div>
@@ -185,12 +242,24 @@
                     </div>
     
                     <div class="view_site">
-                        <a href="#" target="_blank">VIEW</a>
+                        <button type="button" id="myBtn">VIEW</button>
+                    </div>
+                
+                    <!--Modal -->
+                    <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>                                                               
+                        모달내용
+
+                    </div>
+                
                     </div>
                 </div>
             </section>
 
-            <section id="premier3" style="display:none;">
+            <section id="premier4" style="display:none;">
                 <div class="left">
                     <img src="./images/portfolio_belif.png" alt="belif" />
                 </div>
@@ -204,12 +273,24 @@
                     </div>
     
                     <div class="view_site">
-                        <a href="#" target="_blank">VIEW</a>
+                        <button type="button" id="myBtn">VIEW</button>
+                    </div>
+                
+                    <!--Modal -->
+                    <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>                                                               
+                        모달내용
+
+                    </div>
+                
                     </div>
                 </div>
             </section>
 
-            <section id="premier4" style="display:none;">
+            <section id="premier5" style="display:none;">
                 <div class="left">
                     <img src="./images/portfolio_anu.png" alt="anu" />
                 </div>
@@ -223,12 +304,24 @@
                     </div>
     
                     <div class="view_site">
-                        <a href="#" target="_blank">VIEW</a>
+                        <button type="button" id="myBtn">VIEW</button>
+                    </div>
+                
+                    <!--Modal -->
+                    <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>                                                               
+                        모달내용
+
+                    </div>
+                
                     </div>
                 </div>
             </section>
 
-            <section id="premier5" style="display:none;">
+            <section id="premier6" style="display:none;">
                 <div class="left">
                     <img src="./images/portfolio_starbucks.png" alt="sb" />
                 </div>
@@ -242,12 +335,24 @@
                     </div>
     
                     <div class="view_site">
-                        <a href="#" target="_blank">VIEW</a>
+                        <button type="button" id="myBtn">VIEW</button>
+                    </div>
+                
+                    <!--Modal -->
+                    <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>                                                               
+                        모달내용
+
+                    </div>
+                
                     </div>
                 </div>
             </section>
 
-            <section id="premier6" style="display:none;">
+            <section id="premier7" style="display:none;">
                 <div class="left">
                     <img src="./images/portfolio_tmon.png" alt="tmon" />
                 </div>
@@ -261,12 +366,24 @@
                     </div>
     
                     <div class="view_site">
-                        <a href="#" target="_blank">VIEW</a>
+                        <button type="button" id="myBtn">VIEW</button>
+                    </div>
+                
+                    <!--Modal -->
+                    <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>                                                               
+                        모달내용
+
+                    </div>
+                
                     </div>
                 </div>
             </section>
 
-            <section id="premier7" style="display:none;">
+            <section id="premier8" style="display:none;">
                 <div class="left">
                     <img src="./images/portfolio_skplanet.png" alt="sk" />
                 </div>
@@ -280,7 +397,19 @@
                     </div>
     
                     <div class="view_site">
-                        <a href="#" target="_blank">VIEW</a>
+                        <button type="button" id="myBtn">VIEW</button>
+                    </div>
+                
+                    <!--Modal -->
+                    <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>                                                               
+                        모달내용
+
+                    </div>
+                
                     </div>
                 </div>
             </section>
@@ -288,21 +417,21 @@
     </section>
 
     <section id="contact">
-        <h2>
+        <h2 data-kui-anim="slideInUp">
             <span></span>
             CONTACT
         </h2>
 
         <ul>
-            <li>
+            <li data-kui-anim="slideInUp">
                 <img src="images/mail.png" alt="이메일주소" />
                 tmddus682@gmail.com
             </li>
-            <li>
+            <li data-kui-anim="slideInUp">
                 <img src="images/phone.png" alt="휴대폰" />
                 010 - 4730 - 8666
             </li>
-            <li>
+            <li data-kui-anim="slideInUp">
                 <img src="images/download.png" alt="이력서다운" />
                 <a href="이력서_백승연.hwp" download>이력서 다운받기</a>
             </li>
@@ -324,4 +453,32 @@
 <script src="js/charts.js"></script>
 <script src="js/index.js"></script>
 <script src="js/cbpFWTabs.js"></script>
+<script src="js/scrollanim.js"></script>
 
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];                                          
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
