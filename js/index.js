@@ -60,7 +60,7 @@ new CBPFWTabs( document.getElementById( 'tabs' ) );
 
 premier(1);
 function premier(n) {
-for(var i = 1; i < 8; i++) {
+for(var i = 1; i < 9; i++) {
     obj = document.getElementById('premier'+i);
     menu = document.getElementById('premier_button'+i);
     if ( n == i ) {
@@ -74,3 +74,4 @@ for(var i = 1; i < 8; i++) {
     }
 }
 }
+
