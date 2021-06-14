@@ -1,3 +1,9 @@
+<!--
+    1. onclick="<Example>"는 해당 Element가 클릭되었을때 개발자가 작성해놓은 Javascript 함수와 이어진다.
+    2. onclick 이벤트 이외에도 많으므로 구글을 이용하여 찾아보도록 하자.
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -59,7 +65,7 @@
 
         <div class="left">
             <figure data-kui-anim="fadeInLeft">
-                <img src="images/images/contents_about.png"/>
+                <img src="images/pic.jpg"/>
             </figure>
         </div>
         <div class="right">
@@ -165,34 +171,34 @@
                 <h1 class="title">개인 포트폴리오 사이트</h1>
 
                 <div class="tool">
+                    <p>PC / 반응형</p>
+                    <br/>
                     <p>사용 툴 : PhotoshopCC, VS Code</p>
                     <p>참여도 : 100%</p>
                 </div>
 
                 <div class="view_site">
-                    <button type="button" id="myBtn" OnClick='modal(1)'>VIEW</button>
+                    <button type="button" id="myBtn" onclick='modal(1);'>VIEW</button>
                 </div>
-            
+                
                 <!--Modal -->
-                <div id="myModal" class="modal">
+                <section id="myModal1" class="modal">
             
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>                                                               
-                    <h3><span>#01</span> 개인 포트폴리오 사이트<br/> </h3>
-                    <br>
-                    <h4>PC, 반응형</h4>
-                    <br>
-                    작업물을 한 눈에 볼 수 있도록 제작한 개인 포트폴리오 사이트 입니다.<br>
-                    전부 하드코딩으로 작업했고 최근 트렌드에 맞게 원페이지로 제작하였습니다.
-                    <br/>
-                    <br/>
-                    <button type="button" id="myBtn">VIEW SITE</button>
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close" >
+                            <a onclick="cloaeEvent(1);">&times;</a>
+                        </span>                                                               
+                        <h3><span>#01</span> 개인 포트폴리오 사이트<br/></h3>
+                        <br>
+                        <br>
+                        작업물을 한 눈에 볼 수 있도록 제작한 개인 포트폴리오 사이트 입니다.<br>
+                        최근 트렌드에 맞게 원페이지로 제작하였고 심심하게 느껴지지 않도록 애니메이션을 사용하였습니다.
+                        <br/><br/><br/><br/>
+                        <button type="button" id="myBtn">VIEW</button>
 
-                </div>
-            
-                </div>
-
+                    </div>
+                </section>
             </div>
         </section>
 
@@ -205,26 +211,33 @@
                     <h1 class="title">마리오 아울렛</h1>
     
                     <div class="tool">
+                        <p>PC / 반응형</p>
+                        <br/>
                         <p>사용 툴 : PhotoshopCC, VS Code</p>
                         <p>참여도 : 100%</p>
                     </div>
     
                     <div class="view_site">
-                        <button type="button" id="myBtn">VIEW</button>
+                        <button type="button" id="myBtn" onclick='modal(2);'>VIEW</button>
                     </div>
                 
                     <!--Modal -->
-                    <div id="myModal" class="modal">
+                    <section id="myModal2" class="modal">
                 
-                    <!-- Modal content -->
-                    <div class="modal-content">
-                        <span class="close">&times;</span>                                                               
-                        
-
-                    </div>
-                
-                    </div>
-
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close" >
+                                <a onclick="cloaeEvent(2);">&times;</a>
+                            </span>
+                            <h3><span>#02</span> 마리오 아울렛<br/></h3>
+                            <br>
+                            <br>
+                            기존의 "마리오 아울렛" 이라는 사이트를 리뉴얼한 작업물 입니다.<br/>
+                            한 눈에 보기 어려웠던 기존의 사이트를 보기 쉽게 하는것에 초점을 맞춰 리뉴얼하였습니다.
+                            <br/><br/><br/><br/>
+                            <button type="button" id="myBtn">VIEW</button>
+                        </div>                                                       
+                    </section>              
                 </div>
             </section>
 
@@ -237,24 +250,32 @@
                     <h1 class="title">TWOSOME</h1>
     
                     <div class="tool">
+                        <p>PC / 반응형</p>
+                        <br/>
                         <p>사용 툴 : PhotoshopCC, VS Code</p>
                         <p>참여도 : 100%</p>
                     </div>
     
                     <div class="view_site">
-                        <button type="button" id="myBtn">VIEW</button>
+                        <button type="button" id="myBtn" onclick='modal(3);'>VIEW</button>
                     </div>
                 
                     <!--Modal -->
-                    <div id="myModal" class="modal">
+                    <div id="myModal3" class="modal">
                 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close">&times;</span>                                                               
-                        모달내용
-
+                        <span class="close" >
+                            <a onclick="cloaeEvent(3);">&times;</a>
+                        </span>                                                             
+                            <h3><span>#03</span> TWOSOME<br/></h3>
+                            <br>
+                            <br>
+                            기존의 TWOSOME을 리뉴얼한 작업물입니다.<br/>
+                            한 눈에 보기 어려웠던 기존의 사이트를 보기 쉽게 하는것에 초점을 맞춰 리뉴얼하였습니다.
+                            <br/><br/><br/><br/>
+                            <button type="button" id="myBtn">VIEW</button>
                     </div>
-                
                     </div>
                 </div>
             </section>
@@ -265,25 +286,33 @@
                 </div>
 
                 <div class="right">
-                    <h1 class="title">belif</h1>
+                    <h1 class="title">belif 클론코딩</h1>
     
                     <div class="tool">
+                        <p>PC / 반응형</p>
+                        <br/>
                         <p>사용 툴 : PhotoshopCC, VS Code</p>
                         <p>참여도 : 100%</p>
                     </div>
     
                     <div class="view_site">
-                        <button type="button" id="myBtn">VIEW</button>
+                        <button type="button" id="myBtn" onclick='modal(4);'>VIEW</button>
                     </div>
                 
                     <!--Modal -->
-                    <div id="myModal" class="modal">
+                    <div id="myModal4" class="modal">
                 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close">&times;</span>                                                               
-                        모달내용
-
+                        <span class="close" >
+                            <a onclick="cloaeEvent(4);">&times;</a>
+                        </span>                                                             
+                            <h3><span>#04</span> belif 클론코딩<br/></h3>
+                            <br>
+                            <br>
+                            기존의 belif 사이트를 그대로 구현하였습니다.
+                            <br/><br/><br/><br/>
+                            <button type="button" id="myBtn">VIEW</button>
                     </div>
                 
                     </div>
@@ -299,21 +328,30 @@
                     <h1 class="title">ANU</h1>
     
                     <div class="tool">
+                        <p>PC / Design</p>
+                        <br/>
                         <p>사용 툴 : PhotoshopCC</p>
                         <p>참여도 : 100%</p>
                     </div>
     
                     <div class="view_site">
-                        <button type="button" id="myBtn">VIEW</button>
+                        <button type="button" id="myBtn" onclick='modal(5);'>VIEW</button>
                     </div>
                 
                     <!--Modal -->
-                    <div id="myModal" class="modal">
+                    <div id="myModal5" class="modal">
                 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close">&times;</span>                                                               
-                        모달내용
+                        <span class="close" >
+                            <a onclick="cloaeEvent(5);">&times;</a>
+                        </span>                                                           
+                            <h3><span>#05</span> ANU<br/></h3>
+                            <br>
+                            <br>
+                            ANU라는 기업의 기존의 사이트를 리뉴얼하여 각 기기에 맞게 반응형으로 디자인했습니다.
+                            <br/><br/><br/>
+                            <button type="button" id="myBtn">VIEW</button>
 
                     </div>
                 
@@ -330,21 +368,30 @@
                     <h1 class="title">스타벅스</h1>
     
                     <div class="tool">
+                        <p>PC / Design</p>
+                        <br/>
                         <p>사용 툴 : PhotoshopCC</p>
                         <p>참여도 : 100%</p>
                     </div>
     
                     <div class="view_site">
-                        <button type="button" id="myBtn">VIEW</button>
+                        <button type="button" id="myBtn" onclick='modal(6);'>VIEW</button>
                     </div>
                 
                     <!--Modal -->
-                    <div id="myModal" class="modal">
+                    <div id="myModal6" class="modal">
                 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close">&times;</span>                                                               
-                        모달내용
+                        <span class="close" >
+                            <a onclick="cloaeEvent(6);">&times;</a>
+                        </span>                                                            
+                            <h3><span>#06</span> 스타벅스 디자인<br/></h3>
+                            <br>
+                            <br>
+                            스타벅스 사이트를 포토샵을 이용하여 기존 사이트와 똑같이 구현했습니다.
+                            <br/><br/><br/>
+                            <button type="button" id="myBtn">VIEW</button>
 
                     </div>
                 
@@ -361,21 +408,30 @@
                     <h1 class="title">티몬</h1>
     
                     <div class="tool">
+                        <p>PC / Design</p>
+                        <br/>
                         <p>사용 툴 : PhotoshopCC</p>
                         <p>참여도 : 100%</p>
                     </div>
     
                     <div class="view_site">
-                        <button type="button" id="myBtn">VIEW</button>
+                        <button type="button" id="myBtn" onclick='modal(7);'>VIEW</button>
                     </div>
                 
                     <!--Modal -->
-                    <div id="myModal" class="modal">
+                    <div id="myModal7" class="modal">
                 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close">&times;</span>                                                               
-                        모달내용
+                        <span class="close" >
+                            <a onclick="cloaeEvent(7);">&times;</a>
+                        </span>                                                           
+                            <h3><span>#07</span> 티몬<br/></h3>
+                            <br>
+                            <br>
+                            티몬 사이트를 포토샵을 이용하여 기존 사이트와 똑같이 구현했습니다.
+                            <br/><br/><br/>
+                            <button type="button" id="myBtn">VIEW</button>
 
                     </div>
                 
@@ -392,21 +448,30 @@
                     <h1 class="title">SK플래닛</h1>
     
                     <div class="tool">
+                        <p>PC / Design</p>
+                        <br/>
                         <p>사용 툴 : PhotoshopCC</p>
                         <p>참여도 : 100%</p>
                     </div>
     
                     <div class="view_site">
-                        <button type="button" id="myBtn">VIEW</button>
+                        <button type="button" id="myBtn" onclick='modal(8);'>VIEW</button>
                     </div>
                 
                     <!--Modal -->
-                    <div id="myModal" class="modal">
+                    <div id="myModal8" class="modal">
                 
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close">&times;</span>                                                               
-                        모달내용
+                        <span class="close" >
+                            <a onclick="cloaeEvent(8);">&times;</a>
+                        </span>                                                         
+                            <h3><span>#08</span> SK플래닛<br/></h3>
+                            <br>
+                            <br>
+                            SK플래닛 사이트를 포토샵을 이용하여 기존 사이트와 똑같이 구현했습니다.
+                            <br/><br/><br/>
+                            <button type="button" id="myBtn">VIEW</button>
 
                     </div>
                 
@@ -454,19 +519,3 @@
 <script src="js/index.js"></script>
 <script src="js/cbpFWTabs.js"></script>
 <script src="js/scrollanim.js"></script>
-
-<script>
-var span = document.getElementsByClassName("close")[0];                                          
-
-// When the user clicks anywhere outside of the modal, close it
-function modal(n) {
-    for(var i = 1; i < 9; i++) {
-        modal = document.getElementById('myModal' + i);
-        if ( n == 1 ) {
-            obj.style.display = "block";
-        } else {
-            obj.style.display = "none";
-        }
-    }
-}
-</script>

@@ -34,9 +34,10 @@
     width:50%;
     float:left;
     border:0px solid red;
+    text-align: center;
 }
 #about .left img{
-    padding-left:25%;
+    margin-top :10%;
 }
 #about .right{
     width:50%;
@@ -232,6 +233,9 @@
     font-family: notokr-regular;
     margin-bottom: 65px;
 }
+#portfolio .right .tool p:first-child{
+    font-family: 'notokr-medium';
+}
 #portfolio .right .view_site button {
     border: 1px solid #ffaea5;
     color:#ffaea5;
@@ -279,9 +283,11 @@
 .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
-    padding: 20px;
+    padding: 50px;
     width: 60%;
     border-radius: 10px;
+    font-family: 'notokr-regular';
+    font-size:20px;
 }
 .modal-content::-webkit-scrollbar-thumb{
     background-color: #000;
@@ -290,10 +296,35 @@
 .modal-content::-webkit-scrollbar-track{
     background-color: #fff;
 }
+.modal-content h3 {
+    font-family: 'notokr-medium';
+    font-size:28px;
+}
+.modal-content span { color:#ffaea5; }
+.modal-content button {
+    border: 1px solid #ffaea5;
+    color:#ffaea5;
+    font-size:20px;
+    font-family: notokr-light;
+    padding : 10px 140px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+}
+.modal-content button:hover {
+    background-color: #ffaea5;
+    color:#fff;
+    
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
 .close {
     color: #000;
     float: right;
-    margin:-30px -9px 0 0;
+    margin:-50px -20px 0 0;
     font-size: 40px;
     font-weight: bold;
 }
@@ -356,7 +387,7 @@
         border:0px solid red;
     }
     #about .left img{
-        width:70%;
+        width:20%;
         margin:0 auto;
     }
     #about .right{
@@ -555,7 +586,7 @@
         width:100%;
     }
     #about .left img{
-        width:70%;
+        width:50%;
         margin:0 auto;
     }
     #about .right{
