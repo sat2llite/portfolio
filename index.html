@@ -58,7 +58,7 @@
     </section>
 
     <section id="about">
-            <h2 data-kui-anim="slideInUp">
+            <h2>
                 <span></span>
                 ABOUT
             </h2>
@@ -100,44 +100,44 @@
     </section>
 
     <section id="skills">
-        <h2 data-kui-anim="slideInUp">
+        <h2>
             <span></span>
             SKILLS
         </h2>
         <div class="s_contents">
             <div class="charts">
-                <div class="chart" id="psai" data-kui-anim="slideInUp">
+                <div class="chart" id="psai">
                     <img src="./images/ps&ai.png" / alt="psai">
                     <canvas id="myChart"></canvas>
                 </div>
-                <div class="chart" id="html" data-kui-anim="slideInUp">
+                <div class="chart" id="html">
                     <img src="./images/html.png" / alt="html">
                     <canvas id="myChart02"></canvas>
                 </div>
-                <div class="chart" id="css" data-kui-anim="slideInUp">
+                <div class="chart" id="css">
                     <img src="./images/css.png" / alt="css">
                     <canvas id="myChart03"></canvas>
                 </div>
-                <div class="chart" id="jquery" data-kui-anim="slideInUp">
+                <div class="chart" id="jquery">
                     <img src="./images/jquery.png" / alt="jquery">
                     <canvas id="myChart04"></canvas>
                 </div>
             </div>
 
             <div class="txt_group">
-                <div class="charts_txt" id="psai_txt" data-kui-anim="slideInUp">
+                <div class="charts_txt" id="psai_txt">
                     <h3>95%</h3>
                     <p><br><br><br><br></p>
                 </div>
-                <div class="charts_txt" id="html_txt" data-kui-anim="slideInUp">
+                <div class="charts_txt" id="html_txt">
                     <h3>90%</h3>
                     <p><br><br><br><br></p>
                 </div>
-                <div class="charts_txt" id="css_txt" data-kui-anim="slideInUp">
+                <div class="charts_txt" id="css_txt">
                     <h3>90%</h3>
                     <p><br><br><br><br></p>
                 </div>
-                <div class="charts_txt" id="jquery_txt" data-kui-anim="slideInUp">
+                <div class="charts_txt" id="jquery_txt">
                     <h3>70%</h3>
                     <p><br><br><br><br></p>
                 </div>
@@ -146,7 +146,7 @@
     </section>
 
     <section id="portfolio">
-        <h2 data-kui-anim="slideInUp">
+        <h2>
             <span></span>
             PORTFOLIO
         </h2>
@@ -189,13 +189,16 @@
                         <span class="close" >
                             <a onclick="cloaeEvent(1);">&times;</a>
                         </span>                                                               
-                        <h3><span>#01</span> 개인 포트폴리오 사이트<br/></h3>
+                        <h3>개인 포트폴리오 사이트<br/></h3>
                         <br>
                         <br>
-                        작업물을 한 눈에 볼 수 있도록 제작한 개인 포트폴리오 사이트 입니다.<br>
-                        최근 트렌드에 맞게 원페이지로 제작하였고 심심하게 느껴지지 않도록 애니메이션을 사용하였습니다.
-                        <br/><br/><br/><br/>
-                        <button type="button" id="myBtn">VIEW</button>
+                        <span id="color">#01</span> <span>구분</span><br/>PC, 반응형<br/><br/>
+                        <span id="color">#02</span> <span>참여도</span><br/>디자인 100%, 퍼블리싱 100%
+                        <br/><br/>
+                        개인 포트폴리오 사이트입니다. 최근 트렌드에 맞게 원페이지로 제작했습니다.<br/>
+                        최대한 단순하고 깔끔함을 컨셉으로 작업했습니다.
+                        <br/><br/><br/>
+                        <button type="button" id="myBtn" onclick="window.open('http://sat2llite.github.io/portfolio')">VIEW</button>
 
                     </div>
                 </section>
@@ -229,13 +232,19 @@
                             <span class="close" >
                                 <a onclick="cloaeEvent(2);">&times;</a>
                             </span>
-                            <h3><span>#02</span> 마리오 아울렛<br/></h3>
+                            <h3> 마리오 아울렛<br/></h3>
                             <br>
                             <br>
-                            기존의 "마리오 아울렛" 이라는 사이트를 리뉴얼한 작업물 입니다.<br/>
-                            한 눈에 보기 어려웠던 기존의 사이트를 보기 쉽게 하는것에 초점을 맞춰 리뉴얼하였습니다.
-                            <br/><br/><br/><br/>
-                            <button type="button" id="myBtn">VIEW</button>
+                            <span id="color">#01</span> <span>구분</span><br/>PC, 반응형<br/><br/>
+                            <span id="color">#02</span> <span>참여도</span><br/>디자인 100%, 퍼블리싱 100%
+                            <br/><br/>
+                            <span id="color">#03</span> <span>기획서</span><br/><a href="기획서_백승연.pdf" download>기획서 다운받기</a>
+                            <br/><br/>
+                            마리오아울렛 이라는 사이트를 리뉴얼했습니다.<br>
+                            보기 힘들었던 기존의 사이트를 조금 더 편하고 보기 쉽게 기획서를 짜서 작업했습니다.
+                            <br/><br/><br/>
+                            <button type="button" id="myBtn" onclick="window.open('https://sat2llite.github.io/MO/')">VIEW</button>
+                            <button type="button" id="myBtn2" onclick="window.open('http://www.mariooutlet.co.kr/')">기존 사이트</button>
                         </div>                                                       
                     </section>              
                 </div>
@@ -268,13 +277,15 @@
                         <span class="close" >
                             <a onclick="cloaeEvent(3);">&times;</a>
                         </span>                                                             
-                            <h3><span>#03</span> TWOSOME<br/></h3>
+                            <h3>TWOSOME<br/></h3>
                             <br>
                             <br>
-                            기존의 TWOSOME을 리뉴얼한 작업물입니다.<br/>
-                            한 눈에 보기 어려웠던 기존의 사이트를 보기 쉽게 하는것에 초점을 맞춰 리뉴얼하였습니다.
-                            <br/><br/><br/><br/>
-                            <button type="button" id="myBtn">VIEW</button>
+                            <span id="color">#01</span> <span>구분</span><br/>PC, 반응형<br/><br/>
+                            <span id="color">#02</span> <span>참여도</span><br/>디자인 100%, 퍼블리싱 100%
+                            <br/><br/>
+                            기존 투썸플레이스의 메인페이지를 좀 더 카페 이미지에 맞도록 리뉴얼했습니다.
+                            <br/><br/><br/>
+                            <button type="button" id="myBtn" onclick="window.open('https://sat2llite.github.io/twosome/')">VIEW</button>
                     </div>
                     </div>
                 </div>
@@ -307,12 +318,15 @@
                         <span class="close" >
                             <a onclick="cloaeEvent(4);">&times;</a>
                         </span>                                                             
-                            <h3><span>#04</span> belif 클론코딩<br/></h3>
+                            <h3>belif 클론코딩<br/></h3>
                             <br>
                             <br>
-                            기존의 belif 사이트를 그대로 구현하였습니다.
-                            <br/><br/><br/><br/>
-                            <button type="button" id="myBtn">VIEW</button>
+                            <span id="color">#01</span> <span>구분</span><br/>PC, 반응형<br/><br/>
+                            <span id="color">#02</span> <span>참여도</span><br/>디자인 100%, 퍼블리싱 100%
+                            <br/><br/>
+                            기존 belif 사이트를 그대로 웹 페이지에 구현했습니다.
+                            <br/><br/><br/>
+                            <button type="button" id="myBtn" onclick="window.open('https://sat2llite.github.io/belif/')">VIEW</button>
                     </div>
                 
                     </div>
@@ -328,7 +342,7 @@
                     <h1 class="title">ANU</h1>
     
                     <div class="tool">
-                        <p>PC / Design</p>
+                        <p>PC / 반응형 Design</p>
                         <br/>
                         <p>사용 툴 : PhotoshopCC</p>
                         <p>참여도 : 100%</p>
@@ -342,16 +356,33 @@
                     <div id="myModal5" class="modal">
                 
                     <!-- Modal content -->
-                    <div class="modal-content">
+                    <div class="modal-content content">
                         <span class="close" >
                             <a onclick="cloaeEvent(5);">&times;</a>
                         </span>                                                           
-                            <h3><span>#05</span> ANU<br/></h3>
+                            <h3>ANU<br/></h3>
                             <br>
                             <br>
-                            ANU라는 기업의 기존의 사이트를 리뉴얼하여 각 기기에 맞게 반응형으로 디자인했습니다.
-                            <br/><br/><br/>
-                            <button type="button" id="myBtn">VIEW</button>
+                            <span id="color">#01</span> <span>구분</span><br/>PC, 반응형 Design<br/><br/>
+                            <span id="color">#02</span> <span>참여도</span><br/>디자인 100%
+                            <br/><br/>
+                            <span id="color">#03</span> <span>작업 내용</span><br/>
+                            
+                            <div class="img">
+                                <div class="line">MAIN</div>
+                                <img src="images/ANU_main2_백승연.png" />
+                                <br>
+                                <div class="line">SERVICE</div>
+                                <img src="images/ANU_sub_service_백승연.png" />
+                                <div class="line">PEOPLE</div>
+                                <img src="images/ANU_sub_people백승연.png" />
+                                <div class="line">PROJECT</div>
+                                <img src="images/ANU_sub_project_백승연.png" />
+                                <div class="line">RECRUIT</div>
+                                <img src="images/ANU_sub_인사제도_백승연.png" />
+                                <div class="line">CONTACT</div>
+                                <img src="images/ANU_sub_입사지원_백승연.png" />
+                            </div>
 
                     </div>
                 
@@ -382,16 +413,24 @@
                     <div id="myModal6" class="modal">
                 
                     <!-- Modal content -->
-                    <div class="modal-content">
+                    <div class="modal-content content">
                         <span class="close" >
                             <a onclick="cloaeEvent(6);">&times;</a>
                         </span>                                                            
-                            <h3><span>#06</span> 스타벅스 디자인<br/></h3>
+                            <h3>스타벅스 디자인<br/></h3>
                             <br>
                             <br>
-                            스타벅스 사이트를 포토샵을 이용하여 기존 사이트와 똑같이 구현했습니다.
-                            <br/><br/><br/>
-                            <button type="button" id="myBtn">VIEW</button>
+                            <span id="color">#01</span> <span>구분</span><br/>PC, Design<br/><br/>
+                            <span id="color">#02</span> <span>참여도</span><br/>디자인 100%
+                            <br/><br/>
+                            스타벅스의 메인 페이지를 기존과 똑같이 직접 디자인한 작업물입니다.
+                            <br/><br/>
+                            <span id="color">#03</span> <span>작업 내용</span><br/>
+                            
+                            <div class="img">
+                                <div class="line">MAIN</div>
+                                <img src="./images/스벅_백승연.png" />
+                            </div>
 
                     </div>
                 
@@ -422,16 +461,24 @@
                     <div id="myModal7" class="modal">
                 
                     <!-- Modal content -->
-                    <div class="modal-content">
+                    <div class="modal-content content">
                         <span class="close" >
                             <a onclick="cloaeEvent(7);">&times;</a>
                         </span>                                                           
-                            <h3><span>#07</span> 티몬<br/></h3>
+                            <h3>티몬<br/></h3>
                             <br>
                             <br>
-                            티몬 사이트를 포토샵을 이용하여 기존 사이트와 똑같이 구현했습니다.
-                            <br/><br/><br/>
-                            <button type="button" id="myBtn">VIEW</button>
+                            <span id="color">#01</span> <span>구분</span><br/>PC, Design<br/><br/>
+                            <span id="color">#02</span> <span>참여도</span><br/>디자인 100%
+                            <br/><br/>
+                            티몬의 메인 페이지를 기존과 똑같이 직접 디자인한 작업물입니다.
+                            <br/><br/>
+                            <span id="color">#03</span> <span>작업 내용</span><br/>
+                            
+                            <div class="img">
+                                <div class="line">MAIN</div>
+                                <img src="./images/티몬_백승연.png" />
+                            </div>
 
                     </div>
                 
@@ -462,17 +509,32 @@
                     <div id="myModal8" class="modal">
                 
                     <!-- Modal content -->
-                    <div class="modal-content">
+                    <div class="modal-content content">
                         <span class="close" >
                             <a onclick="cloaeEvent(8);">&times;</a>
                         </span>                                                         
-                            <h3><span>#08</span> SK플래닛<br/></h3>
+                            <h3>SK플래닛<br/></h3>
                             <br>
                             <br>
-                            SK플래닛 사이트를 포토샵을 이용하여 기존 사이트와 똑같이 구현했습니다.
-                            <br/><br/><br/>
-                            <button type="button" id="myBtn">VIEW</button>
-
+                            <span id="color">#01</span> <span>구분</span><br/>PC, Design<br/><br/>
+                            <span id="color">#02</span> <span>참여도</span><br/>디자인 100%
+                            <br/><br/>
+                            SK플래닛의 사이트를 기존과 똑같이 직접 디자인한 작업물입니다.
+                            <br/><br/>
+                            <span id="color">#03</span> <span>작업 내용</span><br/>
+                            
+                            <div class="img">
+                                <div class="line">MAIN</div>
+                                <img src="./images/SK planet_백승연.png" />
+                                <div class="line">회사소개</div>
+                                <img src="./images/sk플래닛_sub_백승연.png" />
+                                <div class="line">사업소개</div>
+                                <img src="./images/sk플래닛_사업소개_백승연.png" />
+                                <div class="line">인재채용</div>
+                                <img src="images/sk플래닛_인재채용_채용프로세스_백승연.png" />
+                                <div class="line">홍보센터</div>
+                                <img src="images/sk플래닛_홍보센터_백승연.png" />
+                            </div>
                     </div>
                 
                     </div>
@@ -482,7 +544,7 @@
     </section>
 
     <section id="contact">
-        <h2 data-kui-anim="slideInUp">
+        <h2>
             <span></span>
             CONTACT
         </h2>

@@ -9,6 +9,21 @@
 ::-webkit-scrollbar-track {background-color:#fff;}
 ::-webkit-scrollbar-thumb {background-color:#000;}
 
+.loading {
+    width:100%;
+    height:100%;
+    position: fixed;
+    background:#363636;
+    z-index: 1000;
+    
+    color:#fff;
+    font-family: 'notokr-regular';
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 #about {
     width: 100%;
     height: 100vh;
@@ -276,18 +291,28 @@
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
     padding: 50px;
     width: 60%;
-    border-radius: 10px;
     font-family: 'notokr-regular';
     font-size:20px;
+
+}
+.content{
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 50px;
+    width: 60%;
+    height:100%;
+    overflow:scroll;
+    font-family: 'notokr-regular';
+    font-size:20px;
+
 }
 .modal-content::-webkit-scrollbar-thumb{
     background-color: #000;
@@ -300,7 +325,13 @@
     font-family: 'notokr-medium';
     font-size:28px;
 }
-.modal-content span { color:#ffaea5; }
+.modal-content span#color { color:#ffaea5; }
+.modal-content span {
+    color:#000; 
+    font-size: 22px;
+    font-family: 'notokr-medium';
+}
+.modal-content span a {font-size:30px;}
 .modal-content button {
     border: 1px solid #ffaea5;
     color:#ffaea5;
@@ -321,10 +352,39 @@
     -ms-transition: all .3s ease;
     transition: all .3s ease;
 }
+.modal-content button#myBtn2 { padding : 10px 115px; }
+.modal-content a {
+    font-family: 'notokr-regular';
+    font-size:20px;
+    color:#000;
+}
+.modal-content .img {
+    width:100%;
+    height:100%;
+}
+.modal-content .line {
+    display: flex;
+	align-items: center;
+	margin: 30px 0px;
+    font-size:22px;
+    font-family: 'notokr-medium';
+}
+.modal-content .line::before,
+.modal-content .line::after {
+    content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 16px;
+} 
 .close {
+    width:20px;
+    height: 20px;
     color: #000;
     float: right;
-    margin:-50px -20px 0 0;
+    margin:-40px -20px 0 0;
     font-size: 40px;
     font-weight: bold;
 }
