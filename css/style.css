@@ -505,7 +505,7 @@
     #portfolio .right {
         width:50%;
         height:100%;
-        padding:150px 0 0 10%;
+        padding:150px 2% 0 2%;
         float:right;
     }
     #portfolio .right h1 {
@@ -627,164 +627,6 @@
         margin-bottom:-60px;
     }
 }
-
-@media all and (min-width:300px) and (max-width:798px) {
-    #about {
-        width: 100%;
-        height: 1300px;
-    }
-    #about .left{
-        width:100%;
-    }
-    #about .left img{
-        width:50%;
-        margin:0 auto;
-    }
-    #about .right{
-        width:100%;
-        border:0px solid blue;
-    }
-    #about .right dl{
-        padding-left:10%;
-        margin-top:8%;
-        float:left;
-    }
-    #about .right dl dt{
-        position:relative;
-        padding-top: 1.85%;
-        margin-bottom: 0.9%;
-        font-size:30px;
-        font-family: notokr-medium;
-    }
-    #about .right dl dt:nth-child(1){
-        padding-left:12px;
-    }
-    #about .right dl dt span {
-        background-color: #8e8e8e;
-        width:5px;
-        height:36px;
-        left:0px;
-        position:absolute;
-    }
-    #about .right dl dd{
-        font-size:20px;
-        font-family: notokr-regular;
-        text-indent: 18px;
-    }
-    #about .right dl dd::before{
-        content: "";
-        width: 4px;
-        height: 1px;
-        background-color: #000;
-        margin-top:17px;
-        display: block;
-        position: absolute;
-    }
-    #about .right dl:nth-child(2) dd:nth-child(3)::before,
-    #about .right dl:nth-child(2) dd:nth-child(4)::before,
-    #about .right dl:nth-child(2) dd:nth-child(6)::before	{
-        opacity: 0;
-    }
-
-    #portfolio h2 {
-        font-size:40px;
-        font-weight: bold;
-        font-family: notokr-bold;
-        text-align: center;
-        padding: 50px 0;
-        position: relative;
-        z-index: 3;
-    }
-    #portfolio h2 span {
-        background-color: #ffe2de;
-        width:235px;
-        height:10px;
-        bottom:58px;
-        z-index: -1;
-        margin-left:-3px;
-        position: absolute;
-    }
-    #portfolio {
-        width:100%;
-        height:1200px;
-    }
-    #portfolio .inner {position: relative;}
-
-    #portfolio .inner ul{
-        display: flex;
-        justify-content:center;
-        margin-left:70px;
-        display:block;
-    }
-    #portfolio .inner ul li {
-        display: inline-block;
-        margin-right:50px;
-    }
-    #portfolio .right {
-        width:100%;
-        height:100%;
-        float:left;
-        margin-left: 15%;
-    }
-    #portfolio .right h1 {
-        font-size:28px;
-        font-family: notokr-medium;
-        margin-bottom: 3%;
-    }
-    #portfolio .right .tool {
-        font-size:22px;
-        font-family: notokr-regular;
-        margin-bottom: 6%;
-    }
-    #portfolio .right .view_site a {
-        border: 1px solid #ffaea5;
-        color:#ffaea5;
-        font-size:20px;
-        font-family: notokr-light;
-        padding : 10px 140px;
-        text-align: center;
-    }
-    #portfolio .right .view_site a:hover {
-        background-color: #ffaea5;
-        color:#fff;
-        
-        -webkit-transition: all .3s ease;
-        -moz-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        -ms-transition: all .3s ease;
-        transition: all .3s ease;
-    }
-    #portfolio .left{
-        width:90%;
-        height:100%;
-        float:left;
-        text-align: center;
-    }
-    #portfolio .left img {
-        margin-right:15%;
-        margin-top:15%;
-        margin-bottom:-90px;
-    }
-
-    
-    #contact img {
-        width:90px;
-        margin-right: 20px;
-    }
-    #contact ul {margin-top: 150px;}
-    #contact ul li {
-        margin-bottom: 30px;
-        line-height: 100px;
-        text-indent:20%;
-        font-family: 'notokr-regular';
-        font-size: 20px;
-    }
-    #contact ul li a {
-        font-family: 'notokr-regular';
-        font-size: 20px;
-    }
-}
-
 
 @media all and (max-width:1399px) {
     #skills {height:1300px;}
@@ -1037,7 +879,7 @@
         width:100%;
         height:100%;
         float:left;
-        margin-left: 15%;
+        margin-left: 0;
     }
     #portfolio .right h1 {
         font-size:28px;
@@ -1117,7 +959,7 @@
         width:70px;
         margin-right: 20px;
     }
-    #contact ul {margin-top: 150px;}
+    #contact ul {margin-top: 80px;}
     #contact ul li {
         margin-bottom: 30px;
         line-height: 100px;
@@ -1128,5 +970,275 @@
     #contact ul li a {
         font-family: 'notokr-regular';
         font-size: 20px;
+    }
+    
+    #portfolio h2 {
+        font-size:40px;
+        font-weight: bold;
+        font-family: notokr-bold;
+        text-align: center;
+        padding: 50px 0;
+        position: relative;
+        z-index: 3;
+    }
+    #portfolio h2 span {
+        background-color: #ffe2de;
+        width:235px;
+        height:10px;
+        bottom:58px;
+        z-index: -1;
+        margin-left:-3px;
+        position: absolute;
+    }
+    #portfolio {
+        width:100%;
+        height:900px;
+    }
+    #portfolio .inner {position: relative;}
+
+    #portfolio .inner ul{
+        display: flex;
+        justify-content:center;
+        margin-left:70px;
+        display:block;
+    }
+    #portfolio .inner ul li {
+        display: inline-block;
+        margin-right:50px;
+    }
+    #portfolio .inner ul li a{
+        font-size: 14px;
+        font-family: notokr-regular;
+        display:inline-block;
+    }
+    #portfolio .inner ul li a::after{opacity: 0;}
+    #portfolio h2 {
+        font-size:40px;
+        font-weight: bold;
+        font-family: notokr-bold;
+        text-align: center;
+        padding: 50px 0;
+        position: relative;
+        z-index: 3;
+    }
+    #portfolio h2 span {
+        background-color: #ffe2de;
+        width:235px;
+        height:10px;
+        bottom:58px;
+        z-index: -1;
+        margin-left:-3px;
+        position: absolute;
+    }
+
+    #portfolio .right {
+        width:100%;
+        height:100%;
+        float:left;
+        margin-left: 0;
+    }
+    #portfolio .right h1 {
+        font-size:24px;
+        font-family: notokr-medium;
+        margin-bottom: 3%;
+    }
+    #portfolio .right .tool {
+        font-size:18px;
+        font-family: notokr-regular;
+        margin-bottom: 6%;
+    }
+    #portfolio .right .view_site button {
+        border: 1px solid #ffaea5;
+        color:#ffaea5;
+        font-size:16px;
+        font-family: notokr-light;
+        padding : 10px 130px;
+        text-align: center;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    #portfolio .right .view_site button:hover {
+        background-color: #ffaea5;
+        color:#fff;
+        
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    #portfolio .left{
+        width:80%;
+        height:100%;
+        float:left;
+        text-align: center;
+    }
+    #portfolio .left img {
+        margin-right:0;
+        margin-top:15%;
+        margin-bottom:-90px;
+    }
+
+    #about .left{
+        width:100%;
+    }
+    #about .left img{
+        width:50%;
+        margin:0 auto;
+    }
+    #about .right{
+        width:100%;
+        border:0px solid blue;
+    }
+    #about .right dl{
+        padding-left:10%;
+        margin-top:8%;
+        float:left;
+    }
+    #about .right dl dt{
+        position:relative;
+        padding-top: 1.85%;
+        margin-bottom: 0.9%;
+        font-size:30px;
+        font-family: notokr-medium;
+    }
+    #about .right dl dt:nth-child(1){
+        padding-left:12px;
+    }
+    #about .right dl dt span {
+        background-color: #8e8e8e;
+        width:5px;
+        height:36px;
+        left:0px;
+        position:absolute;
+    }
+    #about .right dl dd{
+        font-size:20px;
+        font-family: notokr-regular;
+        text-indent: 18px;
+    }
+    #about .right dl dd::before{
+        content: "";
+        width: 4px;
+        height: 1px;
+        background-color: #000;
+        margin-top:17px;
+        display: block;
+        position: absolute;
+    }
+    #about .right dl:nth-child(2) dd:nth-child(3)::before,
+    #about .right dl:nth-child(2) dd:nth-child(4)::before,
+    #about .right dl:nth-child(2) dd:nth-child(6)::before	{
+        opacity: 0;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0,0.4);
+    }
+    .modal-content {
+        background-color: #fefefe;
+        margin: 3% auto;
+        padding: 20px;
+        width: 90%;
+        font-family: 'notokr-regular';
+        font-size:20px;
+    }
+    .content{
+        background-color: #fefefe;
+        margin: 5% auto;
+        padding: 20px;
+        width: 90%;
+        height:90%;
+        overflow:scroll;
+        font-family: 'notokr-regular';
+        font-size:20px;
+    }
+    .modal-content::-webkit-scrollbar-thumb{
+        background-color: #000;
+        border-radius: 5px;
+    }
+    .modal-content::-webkit-scrollbar-track{
+        background-color: #fff;
+    }
+    .modal-content h3 {
+        font-family: 'notokr-medium';
+        font-size:28px;
+    }
+    .modal-content span#color { color:#ffaea5; }
+    .modal-content span {
+        color:#000; 
+        font-size: 22px;
+        font-family: 'notokr-medium';
+    }
+    .modal-content span a {font-size:30px;}
+    .modal-content button {
+        border: 1px solid #ffaea5;
+        color:#ffaea5;
+        font-size:16px;
+        font-family: notokr-light;
+        padding : 10px 56px;
+        text-align: center;
+        background-color: #fff;
+        cursor: pointer;
+    }
+    .modal-content button:hover {
+        background-color: #ffaea5;
+        color:#fff;
+        
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    .modal-content button#myBtn2 { padding : 10px 64px; margin-top:10px;}
+    .modal-content a {
+        font-family: 'notokr-regular';
+        font-size:20px;
+        color:#000;
+    }
+    .modal-content .img {
+        width:100%;
+        height:100%;
+    }
+    .modal-content .line {
+        display: flex;
+        align-items: center;
+        margin: 30px 0px;
+        font-size:22px;
+        font-family: 'notokr-medium';
+    }
+    .modal-content .line::before,
+    .modal-content .line::after {
+        content: "";
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.35);
+        height: 1px;
+        font-size: 0px;
+        line-height: 0px;
+        margin: 0px 16px;
+    } 
+    .close {
+        width:20px;
+        height: 20px;
+        color: #000;
+        float: right;
+        margin:-30px -15px 0 0;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
     }
 }
