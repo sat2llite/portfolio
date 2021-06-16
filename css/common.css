@@ -1,8 +1,3 @@
-/* common.css (body, a, header, footer 등 공통영역 꾸미기) */
-
-/*font-family:"나눔고딕"*/
-
-/* 웹폰트(noto-sans) */
 @font-face {
     font-family: 'notokr-black';
     src: url('../font/NotoKR-Black/notokr-black.eot');
@@ -82,17 +77,15 @@
 }
 
 
-/*body, a ,img, input 등 작업 */
-/* html {overflow:hidden;} 스크롤 없애기 */
 html, body, main { height:100%; }
 body { 
-	font-size:100%;	/*16px=100%=1em=12pt*/
+	font-size:100%;
 	color:#333;
 	font-family:"맑은 고딕",돋움,Dotum,굴림,Gulim,sans-serif;
 	line-height:1.5;
 }
 a {
-	font-size:0.75em;	/*0.75em=12px=9pt*/
+	font-size:0.75em;
 	color:#666;
 	font-family:"맑은 고딕",돋움,Dotum,굴림,Gulim,sans-serif;
 	text-decoration:none;
@@ -100,9 +93,6 @@ a {
 img, video { max-width:100%; vertical-align:top; }
 input, select { vertical-align:bottom; }
 
-
-/*----header영역----*/
-/*header,visual*/
 
 #visual .menuBtn {
     position: fixed;
@@ -224,7 +214,7 @@ input, select { vertical-align:bottom; }
     padding-top: 35px;
 }
 
-/*반응형*/
+
 @media all and (min-width:300px) and (max-width:798px) {
     #footer .inner p{
         font-size:16px;

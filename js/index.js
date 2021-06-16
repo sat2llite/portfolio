@@ -1,4 +1,3 @@
-//menu
 $(function () {
   $(".menuBtn").click(function (ev) {
     ev.preventDefault();
@@ -17,7 +16,8 @@ $(document).ready(function ($) {
   });
 });
 
-//메뉴이동
+
+
 jQuery(document).ready(function ($) {
   $(".scroll").click(function (event) {
     event.preventDefault();
@@ -25,7 +25,8 @@ jQuery(document).ready(function ($) {
   });
 });
 
-//tab
+
+
 new CBPFWTabs(document.getElementById("tabs"));
 
 premier(1);
@@ -51,6 +52,9 @@ function premier(n) {
     }
   }
 }
+
+
+
 
 function modal(n) {
   for (var i = 1; i < 9; i++) {
